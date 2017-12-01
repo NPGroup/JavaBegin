@@ -1,4 +1,4 @@
-package entity;
+package java.com.alex.zhurylo.entity;
 
 public class Chapters {
     private int id_chapter;
@@ -7,6 +7,9 @@ public class Chapters {
     public Chapters(int id_chapter, String name) {
         this.id_chapter = id_chapter;
         this.name = name;
+    }
+    public Chapters(){
+
     }
 
     public int getId_chapter() {

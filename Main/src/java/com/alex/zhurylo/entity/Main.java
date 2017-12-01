@@ -1,4 +1,4 @@
-package entity;
+package java.com.alex.zhurylo.entity;
 
 public class Main {
     private int id;
