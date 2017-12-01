@@ -1,4 +1,4 @@
 package java.com.alex.zhurylo.dao;
 
-public class MainDao {
+public class RefrencesDao {
 }

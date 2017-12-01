@@ -1,11 +1,11 @@
 package java.com.alex.zhurylo.entity;
 
-public class Main {
+public class Refrences{
     private int id;
     private int id_chapter;
     private int id_reference;
 
-    public Main(int id, int id_chapter, int id_reference) {
+    public Refrences(int id, int id_chapter, int id_reference) {
         this.id = id;
         this.id_chapter = id_chapter;
         this.id_reference = id_reference;
