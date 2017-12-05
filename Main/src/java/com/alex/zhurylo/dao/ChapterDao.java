@@ -43,7 +43,7 @@ public class ChapterDao implements Dao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        logger.info("User successfully saved. User details: " + chapters);
+        logger.info("User successfully update. User details: " + chapters);
     }
 
     public void removeChapter(int id) {
@@ -57,7 +57,7 @@ public class ChapterDao implements Dao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        logger.info("User successfully saved. User details: " + chapters);
+        logger.info("User successfully delete. User details: " + chapters);
     }
 
     public Chapters getChapters(int id) {
@@ -75,7 +75,7 @@ public class ChapterDao implements Dao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        logger.info("User successfully saved. User details: " + chapters);
+        logger.info("User successfully get. User details: " + chapters);
         return chapters;
     }
 
@@ -96,7 +96,7 @@ public class ChapterDao implements Dao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        logger.info("User successfully saved. User details: " + chaptersList);
+        logger.info("All Users successfully get. User details: " + chaptersList);
         return chaptersList;
     }
 
