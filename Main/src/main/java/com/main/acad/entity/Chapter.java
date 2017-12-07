@@ -1,4 +1,4 @@
-package com.main.acad.entity;
+package main.java.com.main.acad.entity;
 
 import java.util.List;
 
