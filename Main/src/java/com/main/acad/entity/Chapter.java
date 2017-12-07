@@ -1,11 +1,11 @@
-package java.com.alex.zhurylo.entity;
+package java.com.main.acad.entity;
 
 import java.util.List;
 
-public class Chapters {
+public class Chapter {
     private int id;
     private String name;
-    private List<Chapters> subchapter;
+    private List<Chapter> subchapter;
     private String referenceOnFile;
 
     public int getId() {
@@ -24,11 +24,11 @@ public class Chapters {
         this.name = name;
     }
 
-    public List<Chapters> getSubchapter() {
+    public List<Chapter> getSubchapter() {
         return subchapter;
     }
 
-    public void setSubchapter(List<Chapters> subchapter) {
+    public void setSubchapter(List<Chapter> subchapter) {
         this.subchapter = subchapter;
     }
 
@@ -40,12 +40,12 @@ public class Chapters {
         this.referenceOnFile = referenceOnFile;
     }
 
-    public Chapters() {
+    public Chapter() {
 
     }
     @Override
     public String toString() {
-        return "Chapters{" +
+        return "Chapter{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", subchapter=" + subchapter +
