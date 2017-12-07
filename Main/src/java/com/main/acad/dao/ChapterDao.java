@@ -35,7 +35,7 @@ public class ChapterDao implements Dao {
             preparedStatement.executeUpdate();
             logger.info("User successfully saved. User details: " + chapter);
         } catch (SQLException e) {
-            logger.info("connection have some error");
+            logger.info("connection have some error",e);
         }
     }
 
@@ -49,7 +49,7 @@ public class ChapterDao implements Dao {
             preparedStatement.executeUpdate();
             logger.info("User successfully update. User details: " + chapter);
         } catch (SQLException e) {
-            logger.info("connection have some error");
+            logger.info("connection have some error",e);
         }
     }
 
@@ -64,7 +64,7 @@ public class ChapterDao implements Dao {
             preparedStatement.executeUpdate();
             logger.info("User successfully remove. User details: " + chapter);
         } catch (SQLException e) {
-            logger.info("connection have some error");
+            logger.info("connection have some error",e);
         }
     }
 
@@ -82,7 +82,7 @@ public class ChapterDao implements Dao {
             }
             logger.info("User successfully get. User details: " + chapter);
         } catch (SQLException e) {
-            logger.info("connection have some error");
+            logger.info("connection have some error",e);
         }
         return chapter;
     }
@@ -104,7 +104,7 @@ public class ChapterDao implements Dao {
             }
             logger.info("All Chapters successfully get. Chapters details: " + chaptersList);
         } catch (SQLException e) {
-            logger.info("connection have some error");
+            logger.info("connection have some error",e);
         }
         return chaptersList;
     }
