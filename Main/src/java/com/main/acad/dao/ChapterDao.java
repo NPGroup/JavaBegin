@@ -1,7 +1,6 @@
-package java.com.main.acad.dao;
+package com.main.acad.dao;
 
-import java.com.main.acad.entity.Chapter;
-
+import com.main.acad.entity.Chapter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -13,6 +12,7 @@ import java.util.List;
 import java.util.logging.Logger;
 
 public class ChapterDao implements Dao {
+
     private static final String PASSWORD = "root";
     private static final String URL = "jdbc:postgresql://localhost:5432/javaBegin";
     private static final String USER = "postgres";
@@ -100,4 +100,5 @@ public class ChapterDao implements Dao {
         }
         return chaptersList;
     }
+
 }

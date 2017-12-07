@@ -1,7 +1,6 @@
-package java.com.main.acad.dao;
+package com.main.acad.dao;
 
-import java.com.main.acad.entity.Chapter;
-
+import com.main.acad.entity.Chapter;
 import java.util.List;
 
 public interface Dao {

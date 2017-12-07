@@ -1,4 +1,4 @@
-package java.com.main.acad.entity;
+package com.main.acad.entity;
 
 import java.util.List;
 
@@ -48,7 +48,7 @@ public class Chapter {
         return "Chapter{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", subchapter=" + subchapter +
+                ", subchapter=" + subchapters +
                 ", referenceOnFile='" + referenceOnFile + '\'' +
                 '}';
     }
