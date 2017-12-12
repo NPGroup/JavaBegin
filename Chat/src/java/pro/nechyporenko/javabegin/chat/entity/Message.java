@@ -1,4 +1,4 @@
-package pro.nechyporenko.javabegin.chat.entity;
+package java.pro.nechyporenko.javabegin.chat.entity;
 
 public class Message {
 

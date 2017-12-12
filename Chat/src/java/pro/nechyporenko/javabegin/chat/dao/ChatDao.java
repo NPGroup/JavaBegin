@@ -1,6 +1,6 @@
-package pro.nechyporenko.javabegin.chat.dao;
+package java.pro.nechyporenko.javabegin.chat.dao;
 
-import pro.nechyporenko.javabegin.chat.entity.Message;
+import java.pro.nechyporenko.javabegin.chat.entity.Message;
 
 import java.util.List;
 

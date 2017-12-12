@@ -1,6 +1,6 @@
-package pro.nechyporenko.javabegin.chat.dao;
+package java.pro.nechyporenko.javabegin.chat.dao;
 
-import pro.nechyporenko.javabegin.chat.entity.Message;
+import java.pro.nechyporenko.javabegin.chat.entity.Message;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
 
-public class DaoMessage implements ChatDao{
+public class DaoMessage implements ChatDao {
 
         private static final String PASSWORD = "root";
         private static final String URL = "jdbc:postgresql://localhost:5432/javaBegin";
@@ -24,17 +24,18 @@ public class DaoMessage implements ChatDao{
         private String sqlGetByid = "SELECT r.id_message, r.id_refrence, c.text FROM \"references\" r INNER JOIN messages c ON r.id_refrence = c.id_message where c.id_message = ?";
         private String sqlGetAll = "SELECT r.id_message, r.id_refrence, c.text FROM \"references\" r INNER JOIN messages c ON r.id_refrence = c.id_message";
 
-        @Override
-        public void addMessage(Message message) {
-            try (Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
-                 PreparedStatement preparedStatement = connection.prepareStatement(sqlInsert)) {
-                preparedStatement.setString(1, message.getText());
-                preparedStatement.executeUpdate();
-                logger.info("Message sent successfully. Message details: " + message);
-            } catch (SQLException e) {
-                logger.info("Connection have some errors");
-            }
+
+    @Override
+    public void addMessage(Message message) {
+        try (Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
+             PreparedStatement preparedStatement = connection.prepareStatement(sqlInsert)) {
+            preparedStatement.setString(1, message.getText());
+            preparedStatement.executeUpdate();
+            logger.info("Message sent successfully. Message details: " + message);
+        } catch (SQLException e) {
+            logger.info("Connection have some errors");
         }
+    }
 
     @Override
     public void removeMessage(int id) {
